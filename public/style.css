@@ -1,0 +1,91 @@
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  display: flex;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  text-align: center;
+}
+
+#progress {
+  text-align: bottom;
+  position: absolute;
+  width: 50%;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transform: translateY(-50%);
+  border: 1px solid white;
+}
+
+#progress #full {
+  margin: 2px;
+  background: white;
+  height: 0.5em;
+  transform-origin: top left;
+}
+
+#loader {
+  position: absolute;
+  margin: auto;
+  background-color: black;
+}
+
+:root {
+  --first-color: #7000ff;
+  --second-color: #d8fdff;
+  --black-color: #000;
+}
+#loader {
+  background-color: white;
+}
+#progress {
+  top: 50%;
+}
+#progress #full {
+  background: linear-gradient(
+    90deg,
+    rgba(83, 136, 229, 1) 19%,
+    rgba(109, 63, 240, 1) 87%
+  );
+  height: 15px !important;
+  border-radius: 15px;
+}
+#progress p {
+  color: #6d3ff0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#logo {
+  position: absolute;
+  width: 50%;
+  top: 25%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 3;
+}
+#thumbnail_game {
+  position: absolute;
+  bottom: -5px;
+  margin: auto;
+}
+#thumbnail_game img,
+#logo img {
+  width: 100%;
+  height: auto;
+  bottom: 0;
+}
+#thumbnail_game img {
+  height: 100%;
+}
+
+@media (max-width: 575.98px) {
+  #thumbnail_game img {
+    width: 100% !important;
+  }
+}
